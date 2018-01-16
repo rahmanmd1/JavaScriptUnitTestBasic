@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- add mocha css, to show results -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
@@ -13,15 +14,14 @@
 </head>
 
 <body>
-
   <script src="src/MathUtility.js"></script>
   <script src="src/global.js"></script>
+  <script src="src/StringUtility.js"></script>
   <!-- the script with tests (describe, it...) -->
   <script src="tests/MathUtilityTest.js"></script>
-
+  <script src="tests/StringUtilityTest.js"></script>
   <!-- the element with id="mocha" will contain test results -->
   <div id="mocha"></div>
-
   <!-- run tests! -->
   <script>
     mocha.run();

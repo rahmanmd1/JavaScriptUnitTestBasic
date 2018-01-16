@@ -2,7 +2,7 @@
 //======  Power Function.
 function power(x, n) {
 
-  //== Exception defence. 
+  //== Exception defence.
   if (n < 0) return NaN;
   if (Math.round(n) != n) return NaN;
 
@@ -11,4 +11,15 @@ function power(x, n) {
     result *= x;
   }
   return result;
+}
+
+//=======   factorial function.
+function factorialize(num) {
+  if (num < 0)
+        return -1;
+  else if (num == 0)
+      return 1;
+  else {
+      return (num * factorialize(num - 1));
+  }
 }
